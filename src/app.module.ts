@@ -7,7 +7,7 @@ import { AudioguideModule } from './audioguide/audioguide.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://mongodb:27017/mongo-db'),
+    MongooseModule.forRoot(process.env.MONGODB_URI),
     BuildingModule,
     AudioguideModule,
   ],

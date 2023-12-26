@@ -10,7 +10,7 @@ import {
 import { AudioguideService } from './audioguide.service';
 import { Audioguide } from './audioguide.model';
 
-@Controller('audioguide')
+@Controller('audioguides')
 export class AudioguideController {
   constructor(private readonly audioguideService: AudioguideService) {}
 
